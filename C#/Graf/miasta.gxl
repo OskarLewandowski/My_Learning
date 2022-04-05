@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl xmlns:xlink=" http://www.w3.org/1999/xlink">
+
+  <graph id="Zadanie_1" edgeids="true" edgemode="default" hypergraph="false">
+  
+  <node id="0" name="Piła"> </node>
+  <node id="1" name="Budzyń"> </node>
+  <node id="2" name="Chodzież"> </node>
+  <node id="3" name="Trzcianka"> </node>
+  <node id="4" name="Czarnków"> </node>
+  <node id="5" name="Wałcz"> </node>
+  <node id="6" name="Mirosławiec"> </node>
+  <node id="7" name="Podgaje"> </node>
+  <node id="8" name="Złotów"> </node>
+  <node id="9" name="Wyrzysk"> </node>
+
+  <edge id="A" from="0" to="1" weight="53">  </edge>
+  <edge id="A" from="0" to="2" weight="28">  </edge>
+  <edge id="A" from="0" to="3" weight="31">  </edge> 
+  <edge id="A" from="0" to="4" weight="36">  </edge>
+  <edge id="A" from="0" to="5" weight="25">  </edge>
+  <edge id="A" from="0" to="6" weight="65">  </edge>
+  <edge id="A" from="0" to="7" weight="41">  </edge>
+  <edge id="A" from="0" to="8" weight="34">  </edge>
+  <edge id="A" from="0" to="9" weight="37">  </edge>
+
+  <edge id="B" from="1" to="2" weight="14">  </edge>
+  <edge id="B" from="1" to="4" weight="32">  </edge>
+  <edge id="B" from="1" to="9" weight="52">  </edge>
+
+  <edge id="C" from="2" to="3" weight="39">  </edge>
+  <edge id="C" from="2" to="9" weight="38">  </edge>
+
+  <edge id="D" from="3" to="4" weight="18">  </edge>
+  <edge id="D" from="3" to="5" weight="30">  </edge>
+  <edge id="D" from="3" to="6" weight="52">  </edge>
+
+  <edge id="E" from="4" to="0" weight="36">  </edge>
+  <edge id="E" from="4" to="2" weight="28">  </edge>
+  
+  <edge id="F" from="5" to="6" weight="29">  </edge>
+  <edge id="F" from="5" to="7" weight="38">  </edge>
+ 
+  <edge id="G" from="7" to="8" weight="25">  </edge>
+
+  <edge id="H" from="8" to="9" weight="39">  </edge>
+
+  
+  </graph>
+</gxl>
