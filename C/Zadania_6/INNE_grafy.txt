@@ -1,0 +1,82 @@
+// !!!  10 !!!!
+	//                     0    1    2    3    4    5    6    7    8    9
+    int Graf2[ILE][ILE] = {
+                /* 0 */   {0,   0,   2,   0,   0,   0,   0,   0,   0,   0}, //POLACZENIA 2
+
+                /* 1 */   {0,   0,   3,   0,   6,   0,   0,   8,   0,   0}, //POLACZENIA 4
+
+                /* 2 */   {2,   3,   5,   0,   0,   0,   12,  0,   0,   0}, //POLACZENIA 5
+
+                /* 3 */   {0,   0,   5,   0,   0,   0,   10,  0,   11,   0}, //POLACZENIA 4
+
+                /* 4 */   {0,   6,   0,   0,   0,   9,   0,   0,   0,   0}, //POLACZENIA 2
+
+                /* 5 */   {0,   0,   0,   0,   9,   0,   0,  12,   0,   0}, //POLACZENIA 4
+
+                /* 6 */   {0,   0,   12, 10,   0,   0,   0,  13,   0,   0}, //POLACZENIA 5
+
+                /* 7 */   {0,   8,   0,   0,   0,  12,  13,   0,   0,  16}, //POLACZENIA 4
+
+                /* 8 */   {0,   0,   0,  11,   0,   0,   0,   0,   0,  17}, //POLACZENIA 4
+
+                /* 9 */   {0,   0,   0,   0,   0,   0,   0,  16,  17,   0}  //POLACZENIA 4
+                         };
+
+// !!!  9 !!!!
+//PRZYKLAD POTWIERDZAJACY DZIALANIE DFS
+	//                     0    1    2    3    4    5    6    7    8
+    int Graf_DFS[ILE][ILE] = {                                                             //http://www.algorytm.edu.pl/grafy/przeszukiwanie-w-glab.html
+                /* 0 */   {0,   1,   0,   0,   1,   0,   0,   0,   0}, //POLACZENIA 4
+
+                /* 1 */   {1,   0,   1,   0,   0,   0,   0,   0,   0}, //POLACZENIA 5
+
+                /* 2 */   {0,   1,   0,   1,   1,   0,   0,   0,   0}, //POLACZENIA 4
+
+                /* 3 */   {0,   0,   1,   0,   0,   0,   0,   1,   0}, //POLACZENIA 2
+
+                /* 4 */   {1,   0,   0,   0,   0,   1,   0,   0,   0}, //POLACZENIA 4
+
+                /* 5 */   {0,   0,   0,   0,   1,   0,   1,   0,   0}, //POLACZENIA 5
+
+                /* 6 */   {0,   0,   0,   0,   0,   1,   0,   0,   0}, //POLACZENIA 4
+
+                /* 7 */   {0,   0,   0,   1,   1,   0,   0,   0,   1}, //POLACZENIA 4
+
+                /* 8 */   {0,   0,   0,   0,   0,   0,   0,   1,   0}  //POLACZENIA 4
+                         };
+
+// !!!  8 !!!!
+//PRZYKLAD POTWIERDZAJACY DZIALANIE DFS
+	//                     0    1    2    3    4    5    6    7
+    int Graf_DFS1[ILE][ILE] = {                                                           //https://www.thecrazyprogrammer.com/2014/03/depth-first-search-dfs-traversal-of-a-graph.html
+                /* 0 */   {0,   1,   1,   1,   1,   0,   0,   0}, //POLACZENIA 2
+
+                /* 1 */   {1,   0,   0,   0,   0,   1,   0,   0}, //POLACZENIA 4
+
+                /* 2 */   {1,   0,   0,   0,   0,   1,   0,   0}, //POLACZENIA 5
+
+                /* 3 */   {1,   0,   0,   0,   0,   0,   1,   0}, //POLACZENIA 4
+
+                /* 4 */   {1,   0,   0,   0,   0,   0,   1,   0}, //POLACZENIA 2
+
+                /* 5 */   {0,   1,   1,   0,   0,   0,   0,   1}, //POLACZENIA 4
+
+                /* 6 */   {0,   0,   0,   1,   1,   0,   0,   1}, //POLACZENIA 5
+
+                /* 7 */   {0,   0,   0,   0,   0,   1,   1,   0}  //POLACZENIA 4
+                        };
+
+// !!!  10 !!!!
+    	//Graf do BFS  potwierdzenie http://www.algorytm.edu.pl/grafy/bfs.html
+	int Graf_BFS[ILE][ILE] = {
+                             {0,      1,      0,      0,      1,      0,      0,      0,      1,      0},
+                             {1,      0,      1,      1,      0,      0,      0,      0,      0,      0},
+                             {0,      1,      0,      1,      0,      0,      0,      0,      0,      0},
+                             {0,      1,      1,      0,      0,      0,      0,      0,      0,      0},
+                             {1,      0,      0,      0,      0,      1,      1,      1,      0,      0},
+                             {0,      0,      0,      0,      1,      0,      0,      0,      0,      0},
+                             {0,      0,      0,      0,      1,      0,      0,      0,      0,      0},
+                             {0,      0,      0,      0,      1,      0,      0,      0,      0,      1},
+                             {1,      0,      0,      0,      0,      0,      0,      0,      0,      1},
+                             {0,      0,      0,      0,      0,      0,      0,      1,      1,      0}
+                         };
